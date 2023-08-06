@@ -1,0 +1,21 @@
+﻿@model PizzaViewModel
+
+<div class="row">
+    <h1>Today's pizza on promotion is: @Model.Name</h1>
+        <div class="card" style="width: 18rem; margin-left:15px;">
+            <img class="card-img-top" src="https://alternate-takes.com/wp-content/uploads/2021/05/s2.jpg" alt="Card image cap">
+        </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="text-center">
+    <h2>Create an order and check out our other pizzas</h2>
+    </div>
+</div>
+<br />
+<div class="text-center">
+    <a asp-action="Create" asp-controller="Order" class="btn btn-outline-success">Create order</a>
+</div>
+<br />
+
