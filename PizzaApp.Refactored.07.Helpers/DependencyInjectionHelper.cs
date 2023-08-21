@@ -31,7 +31,7 @@ namespace System // Piggybacking
         public static void InjectDbContext(this IServiceCollection services)
         {
             services.AddDbContext<PizzaDbContext>(options =>
-                options.UseSqlServer("Server=ELENA;Database=PizzaDbTest;Trusted_Connection=True;TrustServerCertificate=True")
+                options.UseSqlServer("Server=localhost;Database=PizzaDbTest;Trusted_Connection=True;TrustServerCertificate=True")
             );
         }
     }
